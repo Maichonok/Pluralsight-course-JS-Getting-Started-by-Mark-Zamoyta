@@ -60,16 +60,38 @@ const values = ["a", "b", "c"];
 // console.log(values[0]); //aaa
 // console.log(values, last);
 // console.log(values, first);
-values.unshift('hello', 'world');
+values.unshift("hello", "world");
 console.log(values); //['hello', 'a', 'b', 'c']
-
 
 //slice()
 const array = ["a", "b", "c"];
-const newArray = array.slice(1,2);
+const newArray = array.slice(1, 2);
 console.log(newArray); //b
 
 //splice()
 const arrayNew = ["a", "b", "c"];
-arrayNew.splice(1,1);
+arrayNew.splice(1, 1);
 console.log(arrayNew); // a c
+
+const arrayOfUser = ["a", "b", "c"];
+console.log(arrayOfUser.indexOf("a")); //0
+console.log(arrayOfUser.indexOf("v")); //-1
+
+const myValues = ["a", "b", "c", "d", "z"];
+const set = myValues.filter(function (item) {
+  console.log("item: ", item);
+  return item > "b";
+});
+console.log(set); //["c", "d", "z"]
+
+const myArray = ["a", "bbb", "c"];
+const found = values.find(function(item) {
+    return item.length > 1;
+});
+console.log(found); //bbb
+
+const letters = ["a", "b", "c"];
+
+letters.forEach(function(item) {
+    console.log(item); // a b c
+});
