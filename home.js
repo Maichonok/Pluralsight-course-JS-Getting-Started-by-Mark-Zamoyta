@@ -44,9 +44,21 @@ button.addEventListener("click", function () {
   const review = document.getElementById("review");
   if (review.classList.contains("d-none")) {
     review.classList.remove("d-none");
-    button.textContent = 'CLOSE REVIEW';
+    button.textContent = "CLOSE REVIEW";
   } else {
     review.classList.add("d-none");
-    button.textContent = 'SEE REVIEW';
+    button.textContent = "SEE REVIEW";
   }
 });
+
+const values = ["a", "b", "c"];
+// values. push('d', 'e', 'f');
+// const last = values.pop();
+// const first = values.shift();
+// values[0] = 'aaa';
+// console.log(Array.isArray(values));
+// console.log(values[0]); //aaa
+// console.log(values, last);
+// console.log(values, first);
+values.unshift('hello', 'world');
+console.log(values); //['hello', 'a', 'b', 'c']
