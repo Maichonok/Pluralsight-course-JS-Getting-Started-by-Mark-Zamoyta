@@ -62,3 +62,14 @@ const values = ["a", "b", "c"];
 // console.log(values, first);
 values.unshift('hello', 'world');
 console.log(values); //['hello', 'a', 'b', 'c']
+
+
+//slice()
+const array = ["a", "b", "c"];
+const newArray = array.slice(1,2);
+console.log(newArray); //b
+
+//splice()
+const arrayNew = ["a", "b", "c"];
+arrayNew.splice(1,1);
+console.log(arrayNew); // a c
