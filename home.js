@@ -85,17 +85,38 @@ const set = myValues.filter(function (item) {
 console.log(set); //["c", "d", "z"]
 
 const myArray = ["a", "bbb", "c"];
-const found = values.find(function(item) {
-    return item.length > 1;
+const found = values.find(function (item) {
+  return item.length > 1;
 });
 console.log(found); //bbb
 
 const letters = ["a", "b", "c"];
 
-letters.forEach(function(item) {
-    console.log(item); // a b c
+letters.forEach(function (item) {
+  console.log(item); // a b c
 });
 
-const containers = document.getElementsByClassName('container');
-containers[0].classList.add('d-none');
+const containers = document.getElementsByClassName("container");
+containers[0].classList.add("d-none");
 console.log(containers);
+
+const app = {
+  productId: 12345,
+  userName: "Joe",
+  orderNumber: 789,
+};
+
+let productId = 456;
+
+function showProductId() {
+  // let productId = 12;
+  function fix() {
+    console.log("in fix: ", productId);
+  }
+  // console.log(productId);
+  // console.log(app.productId);
+  fix();
+
+  console.log("in showProductId: ", productId);
+}
+showProductId();
