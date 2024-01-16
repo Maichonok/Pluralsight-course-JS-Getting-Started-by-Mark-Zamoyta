@@ -95,3 +95,7 @@ const letters = ["a", "b", "c"];
 letters.forEach(function(item) {
     console.log(item); // a b c
 });
+
+const containers = document.getElementsByClassName('container');
+containers[0].classList.add('d-none');
+console.log(containers);
